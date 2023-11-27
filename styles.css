@@ -66,7 +66,9 @@ body{
 }
 
 .rockButton{
-    position: relative;
+    position: fixed;
+    left: 32rem;
+    cursor: pointer;
     height: 5.5rem;
     width: 5.5rem;
     z-index: 1;
@@ -77,8 +79,9 @@ body{
 }
 
 .line1{
-    position: absolute;
-    top: 8rem;
+    position: fixed;
+    top: 21rem;
+    left: 40rem;
     border: 0.5rem solid black;
     height: 0px;
     width: 15rem;
@@ -86,7 +89,9 @@ body{
 }
 
 .scissorsButton{
-    position: relative;
+    position: fixed;
+    left: 50rem;
+    cursor: pointer;
     z-index: 1;
     height: 5.5rem;
     width: 5.5rem;
@@ -102,9 +107,9 @@ body{
 }
 
 .line2{
-    position: absolute;
-    top: 12rem;
-    left: 21rem;
+    position: fixed;
+    top: 25rem;
+    left: 45rem;
     border: 0.5rem solid black;
     height: 0px;
     width: 14rem;
@@ -113,7 +118,10 @@ body{
 }
 
 .paperButton{
-    position: relative;
+    position: fixed;
+    top: 29rem;
+    left: 41rem;
+    cursor: pointer;
     z-index: 1;
     height: 5.5rem;
     width: 5.5rem;
@@ -129,9 +137,9 @@ body{
 }
 
 .line3{
-    position: absolute;
-    top: 12rem;
-    left: 8rem;
+    position: fixed;
+    top: 25rem;
+    left: 30rem;
     border: 0.5rem solid black;
     height: 0px;
     width: 15rem;

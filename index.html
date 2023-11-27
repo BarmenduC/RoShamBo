@@ -17,12 +17,12 @@
             <div class="Score">
                 <span class="scoreText">COMPUTER</span>
                 <span class="scoreText">SCORE</span>
-                <span class="scoreDigit">0</span>
+                <span id="compScore" class="scoreDigit">0</span>
             </div>
             <div class="Score">
                 <span class="scoreText">YOUR</span>
                 <span class="scoreText">SCORE</span>
-                <span class="scoreDigit">0</span>
+                <span id="userScore" class="scoreDigit">0</span>
             </div>
         </div>
     </div>
@@ -30,17 +30,17 @@
     <div class="mainBody">
         <div class="startGame">
             <div class="topButtons">
-                <div class="rockButton">
+                <div class="rockButton gameButton" onclick="playerPick()">
                     <img src="./assets/icons8-fist-67 1.svg" alt="Rock">
                 </div>
                 <img class="line1" src="./assets/Line 1.svg" alt="">
-                <div class="scissorsButton">
+                <div class="scissorsButton gameButton">
                     <img class="scissorImage" src="./assets/17911 1.svg" alt="Rock">
                 </div>
                 <img class="line2" src="./assets/Line 1.svg" alt="">
             </div>
             <div class="bottomButton">
-                <div class="paperButton">
+                <div class="paperButton gameButton">
                     <img class="paperImage" src="./assets/icons8-hand-64 1.svg" alt="Rock">
                 </div>
                 <img class="line3" src="./assets/Line 1.svg" alt="">

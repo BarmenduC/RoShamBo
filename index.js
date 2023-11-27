@@ -1,6 +1,11 @@
 //Constants and Variables
 
-let rulesToggle = document.getElementsByClassName('ruleBox')
+const rulesToggle = document.getElementsByClassName('ruleBox')
+let rock = document.getElementsByClassName('rockButton')
+let computerScore = document.getElementById('compScore').innerHTML
+let userScore = document.getElementById('userScore').innerHTML
+
+
 
 //Functions
 
@@ -12,4 +17,13 @@ function showRules(){
 
 function hideRules(){
     rulesToggle[0].classList.remove("open")
+}
+
+function incrementScore(){
+    document.getElementById('compScore').innerHTML = ++computerScore
+    document.getElementById('userScore').innerHTML = ++userScore
+}
+
+function playerPick(){
+
 }
