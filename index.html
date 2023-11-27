@@ -30,18 +30,18 @@
     <div class="mainBody">
         <div class="startGame">
             <div class="topButtons">
-                <div class="rockButton gameButton" onclick="playerPick()">
-                    <img src="./assets/icons8-fist-67 1.svg" alt="Rock">
+                <div class="rockButton gameButton" onclick="playerPick(event)">
+                    <img src="./assets/icons8-fist-67 1.svg" id="Rock" alt="Rock">
                 </div>
                 <img class="line1" src="./assets/Line 1.svg" alt="">
                 <div class="scissorsButton gameButton">
-                    <img class="scissorImage" src="./assets/17911 1.svg" alt="Rock">
+                    <img class="scissorImage" src="./assets/17911 1.svg" id="Scissor" alt="Scissor">
                 </div>
                 <img class="line2" src="./assets/Line 1.svg" alt="">
             </div>
             <div class="bottomButton">
                 <div class="paperButton gameButton">
-                    <img class="paperImage" src="./assets/icons8-hand-64 1.svg" alt="Rock">
+                    <img class="paperImage" src="./assets/icons8-hand-64 1.svg" id="Paper" alt="Paper">
                 </div>
                 <img class="line3" src="./assets/Line 1.svg" alt="">
             </div>
@@ -64,6 +64,7 @@
                 </ul>
             </div>
         </div>
+        <button class="nextButton " onclick="showNext()">NEXT</button>
         <button class="rulesButton " onclick="showRules()">RULES</button>
     </div>
 
