@@ -78,6 +78,33 @@ body{
     padding: 1rem 0 0 0.5rem;
 }
 
+.playerRockButton{
+    position: fixed;
+    height: 5.5rem;
+    width: 5.5rem;
+    z-index: 1;
+    background: white;
+    border-radius: 100%;
+    border: 1rem solid #0074B6;
+    padding: 1rem 0 0 0.5rem;
+    left: 22.5rem;
+    top: 21.5rem;
+}
+
+.compRockButton{
+    position: fixed;
+    visibility: hidden;
+    height: 5.5rem;
+    width: 5.5rem;
+    z-index: 1;
+    background: white;
+    border-radius: 100%;
+    border: 1rem solid #0074B6;
+    padding: 1rem 0 0 0.5rem;
+    left: 60rem;
+    top: 21.5rem;
+}
+
 .line1{
     position: fixed;
     top: 21rem;
@@ -99,6 +126,33 @@ body{
     border-radius: 100%;
     border: 1rem solid #BD00FF;
     padding: 1rem 0 0 0.5rem;
+}
+
+.playerScissorButton{
+    position: fixed;
+    height: 5.5rem;
+    width: 5.5rem;
+    z-index: 1;
+    background: white;
+    border-radius: 100%;
+    border: 1rem solid #BD00FF;
+    padding: 1rem 0 0 0.5rem;
+    left: 22.5rem;
+    top: 21.5rem;
+}
+
+.compScissorsButton{
+    position: fixed;
+    visibility: hidden;
+    height: 5.5rem;
+    width: 5.5rem;
+    z-index: 1;
+    background: white;
+    border-radius: 100%;
+    border: 1rem solid #BD00FF;
+    padding: 1rem 0 0 0.5rem;
+    left: 60rem;
+    top: 21.5rem;
 }
 
 .scissorImage{
@@ -129,6 +183,33 @@ body{
     border-radius: 100%;
     border: 1rem solid #FFA943;
     padding: 1rem 0 0 0.5rem;
+}
+
+.playerPaperButton{
+    position: fixed;
+    height: 5.5rem;
+    width: 5.5rem;
+    z-index: 1;
+    background: white;
+    border-radius: 100%;
+    border: 1rem solid #FFA943;
+    padding: 1rem 0 0 0.5rem;
+    left: 22.5rem;
+    top: 21.5rem;
+}
+
+.compPaperButton{
+    position: fixed;
+    visibility: hidden;
+    height: 5.5rem;
+    width: 5.5rem;
+    z-index: 1;
+    background: white;
+    border-radius: 100%;
+    border: 1rem solid #FFA943;
+    padding: 1rem 0 0 0.5rem;
+    left: 60rem;
+    top: 21.5rem;
 }
 
 .paperImage{
@@ -191,7 +272,7 @@ body{
     top: 17.5rem;
     left: 69rem;
     background: #004429;
-    width: 13rem;
+    width: 14rem;
     height: 16rem;
     padding: 1.2rem 1rem 2rem 2rem;
     color: #ffffff;
@@ -206,7 +287,7 @@ body{
 .crossButton{
     position: relative;
     top: 2rem;
-    left: 28rem;
+    left: 30rem;
     background: #ff0000;
     height: 2rem;
     width: 2rem;
@@ -227,6 +308,145 @@ body{
 
 li{
     margin: 0 0 1rem 0;
+}
+
+.playerWin{
+    visibility: hidden;
+    position: fixed;
+    text-align: center;
+    top: 24rem;
+    left: 38.5rem;
+}
+
+.playerWin>p{
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+
+.playerWin>span{
+    font-size: 1.75rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.compWin{
+    visibility: hidden;
+    position: fixed;
+    text-align: center;
+    top: 24rem;
+    left: 37.5rem;
+}
+
+.compWin>p{
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+
+.compWin>span{
+    font-size: 1.75rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.noWin{
+    visibility: hidden;
+    position: fixed;
+    text-align: center;
+    top: 24rem;
+    left: 40.5rem;
+}
+
+.noWin>span{
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 5px;
+    line-height: 3rem;
+}
+
+.playerSelect{
+    visibility: hidden;
+    z-index: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    line-height: 1rem;
+    position: absolute;
+    top: 18rem;
+    left: 23rem;
+}
+
+.pcSelect{
+    visibility: hidden;
+    z-index: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    line-height: 1rem;
+    position: absolute;
+    top: 18rem;
+    left: 60.5rem;
+}
+
+.winner-shadow{
+    box-shadow:
+    0 0 0 30px #1da82b, 
+    0 0 0 50px #1da82b90, 
+    0 0 0 65px #2E9A2563;
+    border-radius: 50%;
+  }
+
+.playAgain{
+    visibility: hidden;
+    position: fixed;
+    text-align: center;
+    background-color: #ffffff;
+    top: 30rem;
+    left: 40rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: #6B6B6B;
+    letter-spacing: 5px;
+    line-height: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-style: none;
+}
+
+.replay{
+    visibility: hidden;
+    position: fixed;
+    text-align: center;
+    background-color: #ffffff;
+    top: 30rem;
+    left: 41.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: #6B6B6B;
+    letter-spacing: 5px;
+    line-height: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-style: none;
 }
 
 /* .playerScore{
@@ -346,6 +566,7 @@ li{
 }
 
 .nextButton{
+    visibility: hidden;
     position: absolute;
     cursor: pointer;
     width: 7rem;
@@ -379,4 +600,8 @@ li{
     color: #ffffff;
     font-size: 1.25rem;
     letter-spacing: 1.5px;
+}
+
+.tempClass{
+    visibility: visible;
 }

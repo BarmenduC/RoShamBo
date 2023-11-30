@@ -30,24 +30,54 @@
     <div class="mainBody">
         <div class="startGame">
             <div class="topButtons">
-                <div class="rockButton gameButton" onclick="playerPick(event)">
+                <div class="rockButton gameButton" onclick="playerPick(event)" id="rockDiv">
                     <img src="./assets/icons8-fist-67 1.svg" id="Rock" alt="Rock">
                 </div>
+                <div class="compRockButton" >
+                    <img src="./assets/icons8-fist-67 1.svg" alt="Rock">
+                </div>
                 <img class="line1" src="./assets/Line 1.svg" alt="">
-                <div class="scissorsButton gameButton " onclick="playerPick(event)">
+                <div class="scissorsButton gameButton " onclick="playerPick(event)" id="scissorDiv">
                     <img class="scissorImage" src="./assets/17911 1.svg" id="Scissor" alt="Scissor">
+                </div>
+                <div class="compScissorsButton" >
+                    <img class="scissorImage" src="./assets/17911 1.svg" alt="Rock">
                 </div>
                 <img class="line2" src="./assets/Line 1.svg" alt="">
             </div>
             <div class="bottomButton">
-                <div class="paperButton gameButton" onclick="playerPick(event)">
+                <div class="paperButton gameButton" onclick="playerPick(event)" id="paperDiv">
                     <img class="paperImage" src="./assets/icons8-hand-64 1.svg" id="Paper" alt="Paper">
                 </div>
+                <div class="compPaperButton" >
+                    <img class="paperImage" src="./assets/icons8-hand-64 1.svg" alt="Rock">
+                </div>
                 <img class="line3" src="./assets/Line 1.svg" alt="">
-            </div>
-            
+            </div>    
+        </div>
+        <div class="playerWin">
+            <p>YOU WIN</p>
+            <span>AGAINST PC</span>
+        </div>
+        <div class="compWin">
+            <p>YOU LOSE</p>
+            <span>AGAINST PC</span>
+        </div>
+        <div class="noWin">
+            <span>TIE UP</span>
+        </div>
+
+        <div class="playerSelect">
+            YOU PICKED
+        </div>
+
+        <div class="pcSelect">
+            PC PICKED
         </div>
     
+        <button class="playAgain" onclick="showPrev()">PLAY AGAIN</button>
+        <button class="replay" onclick="showPrev()">REPLAY</button>
+
         <div class="ruleBox">
             <div class="crossButton" onclick="hideRules()">
                 <p class="cross">
@@ -58,7 +88,7 @@
                 <h1 class="ruleHeading">Game Rules</h1>
                 <ul>
                     <li>Rock beats scissors, scissors beat paper, and paper beats rock</li>
-                    <li>Agree ahead of time whether you'll count off "rock, paper, scissors."</li>
+                    <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors"</li>
                     <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
                     <li>If both players lay down the same hand, each player lays down another hand</li>
                 </ul>
