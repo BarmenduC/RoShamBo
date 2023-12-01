@@ -1,14 +1,16 @@
 //Constants and Variables
 
-const rulesToggle = document.getElementsByClassName('ruleBox')
 let rock = document.querySelector('.rockButton')
 let comprock = document.querySelector('.compRockButton')
 let paper = document.querySelector('.paperButton')
 let comppaper = document.querySelector('.compPaperButton')
 let scissor = document.querySelector('.scissorsButton')
 let compscissor = document.querySelector('.compScissorsButton')
-let computerScore = document.getElementById('compScore').innerHTML
-let userScore = document.getElementById('userScore').innerHTML
+let computerScore = document.getElementById('compScore')
+let userScore = document.getElementById('userScore')
+const rulesToggle = document.getElementsByClassName('ruleBox')
+const scoresObject = localStorage.getItem("score");
+const score = scoresObject ? JSON.parse(scoresObject) : { user: 0, computer: 0 };
 let gameButton = document.querySelectorAll('.gameButton')
 let playerWinText = document.querySelector('.playerWin')
 let compWinText = document.querySelector('.compWin')
@@ -24,6 +26,17 @@ let pcSelect = document.querySelector('.pcSelect')
 
 
 //Functions
+
+function scoreView() {
+    const scoresObject = localStorage.getItem("score");
+    const updatedScores = scoresObject ? JSON.parse(scoresObject) : { user: 0, computer: 0 };
+    computerScore.innerText = updatedScores.computer;
+    userScore.innerText = updatedScores.user;
+    console.log(computerScore)
+    console.log(score.computer)
+    console.log(score.user)
+  }
+  scoreView();
 
 function showRules(){
     console.log(rulesToggle[0])
@@ -44,14 +57,21 @@ function hideRules(){
 }
 
 function incrementScore(winner){
+    
+    
+    
+
+
     if(winner === 'user'){
-        document.getElementById('userScore').innerHTML = ++userScore
+        // document.getElementById('userScore').innerHTML = ++userScore
+        score.user += 1;
         playerWinText.style.visibility = 'visible'
         playAgainButton.style.visibility = 'visible'
         nextButton.style.visibility = 'visible'
     }
     else if(winner === 'computer'){
-        document.getElementById('compScore').innerHTML = ++computerScore
+        // document.getElementById('compScore').innerHTML = ++computerScore
+        score.computer += 1;
         compWinText.style.visibility = 'visible'
         playAgainButton.style.visibility = 'visible'
     }
@@ -59,6 +79,10 @@ function incrementScore(winner){
         noWinText.style.visibility = 'visible'
         replayButton.style.visibility = 'visible'
     }
+
+    localStorage.setItem("score", JSON.stringify(score));
+
+    scoreView();
 }
 
 function playerPick(e){
@@ -144,6 +168,9 @@ function compPick(playpick){
         
     return computpick
 }
+
+
+
 
 // console.log(line1.classList)
 // console.log(line2)
