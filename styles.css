@@ -1,8 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 body{
@@ -312,6 +310,32 @@ body{
 
 li{
     margin: 0 0 1rem 0;
+    list-style-type: none;
+}
+
+.yellowBullet1{
+    position: absolute;
+    left: 1rem;
+    top: 5rem;
+    
+}
+
+.yellowBullet2{
+    position: absolute;
+    left: 1rem;
+    top: 8rem;
+}
+
+.yellowBullet3{
+    position: absolute;
+    left: 1rem;
+    top: 11.5rem;
+}
+
+.yellowBullet4{
+    position: absolute;
+    left: 1rem;
+    top: 15rem;
 }
 
 .playerWin{
