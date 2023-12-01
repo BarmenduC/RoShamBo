@@ -244,6 +244,10 @@ body{
     display: none;
 }
 
+.ruleText{
+    margin-left: 0.5rem;
+}
+
 .open{
     width: 25vw;
     margin-left: 5rem;
